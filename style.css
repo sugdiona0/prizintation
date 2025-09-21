@@ -1,0 +1,90 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #1c1240;
+  color: #fff;
+  line-height: 1.6;
+}
+h1, h2, h3 { margin-bottom: 15px; }
+section { padding: 80px 10%; }
+img { width: 100%; border-radius: 12px; object-fit: cover; }
+
+/* Hero */
+.hero {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center;
+  padding: 100px 10%; background: #2c1a60;
+}
+.hero-text { flex: 1; padding-right: 20px; }
+.hero-img { flex: 1; }
+
+/* About */
+.about {
+  display: flex; gap: 40px; flex-wrap: wrap; align-items: center;
+}
+.about-text { flex: 1; }
+.about-img { flex: 1; }
+
+/* Features */
+.features { background: #2a2050; text-align: center; }
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px; margin-top: 40px;
+}
+.feature img { max-height: 180px; margin-bottom: 15px; }
+.feature { background: #3a2a70; padding: 20px; border-radius: 12px; }
+
+/* Technologies */
+.technologies { background: #2c1a60; text-align: center; }
+.tech-grid {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px; margin-top: 40px;
+}
+.tech img { max-height: 180px; margin-bottom: 15px; }
+.tech { background: #3a2a70; padding: 20px; border-radius: 12px; }
+
+/* Examples */
+.examples { text-align: center; background: #2a2050; }
+.example-grid {
+  display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;
+}
+.example img { width: 140px; margin-bottom: 15px; background: #fff; border-radius: 8px; }
+
+/* Challenges */
+.challenges { background: #2c1a60; text-align: center; }
+.challenge-grid {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px; margin-top: 40px;
+}
+.challenge img { max-height: 150px; margin-bottom: 15px; border-radius: 8px; }
+.challenge { background: #3a2a70; padding: 20px; border-radius: 12px; }
+
+/* Teacher */
+.teacher {
+  display: flex; gap: 40px; flex-wrap: wrap; align-items: center;
+}
+.teacher-text { flex: 1; }
+.teacher-img { flex: 1; }
+
+/* Future */
+.future { text-align: center; background: #2a2050; }
+.future img { margin-top: 30px; max-width: 600px; }
+
+/* Visual */
+.visual { text-align: center; }
+.visual-grid {
+  display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+}
+.visual-grid img { max-width: 45%; }
+
+/* Conclusion */
+.conclusion { background: #2c1a60; text-align: center; }
+
+/* Footer */
+footer { background: #140a30; text-align: center; padding: 30px; color: #aaa; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero, .about, .teacher { flex-direction: column; text-align: center; }
+  .visual-grid img { max-width: 100%; }
+}
